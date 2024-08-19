@@ -7,14 +7,8 @@ This is a Shadcn/UI website for an engineering consulting company called Perspec
 - TypeScript
 - JavaScript
 - Shadcn/UI
-- Next.js
+- Vite
 - Tailwind CSS
-
-## Project Structure
-
-- `src/App.tsx`: Main application component.
-- `src/App.css`: Main CSS file for styling.
-- `src/index.css`: Additional CSS for global styles.
 
 ## Getting Started
 
@@ -22,7 +16,7 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/anthonyyoussef01/PerspectiveEngineering.git
     ```
 1. Navigate to the project directory:
    ```sh
