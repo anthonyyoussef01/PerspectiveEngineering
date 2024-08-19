@@ -19,7 +19,7 @@ const testimonials: TestimonialProps[] = [
     image: "https://github.com/shadcn.png",
     name: "John Doe React",
     userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    comment: "Perspective Engineering & Consulting is awesome!",
   },
   {
     image: "https://github.com/shadcn.png",
@@ -71,7 +71,7 @@ export const Testimonials = () => {
           {" "}
           People Love{" "}
         </span>
-        This Landing Page
+        Perspective Engineering & Consulting
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">

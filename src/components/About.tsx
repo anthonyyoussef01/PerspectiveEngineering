@@ -20,14 +20,13 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   About{" "}
                 </span>
-                Company
+                Perspective Engineering & Consulting
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                Perspective Engineering & Consulting is one of the leading MEP Engineering and Design service providers
+                in the tristate area. We are registered licensed PE engineers, assisting with projects ranging from
+                hospitals and residential buildings to apartments and educational institutions. Our team is dedicated
+                to delivering high-quality engineering solutions tailored to the unique needs of each client.
               </p>
             </div>
 

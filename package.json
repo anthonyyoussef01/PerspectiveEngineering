@@ -1,12 +1,12 @@
 {
-  "name": "shadcn-landing-page-template",
-  "description": "Landing page template utilizing Shadcn, React, Typescript, and Tailwind CSS for rapid development and responsive design.",
+  "name": "perspective-engineering-and-consulting",
+  "description": "Perspective Engineering & Consulting official website",
   "author": {
-    "name": "Leopoldo Miranda",
-    "email": "leomirandadev@gmail.com",
-    "url": "https://github.com/leoMirandaa"
+    "name": "Anthony Elkommos Youssef",
+    "email": "anthony@elkommos.com",
+    "url": "https://elkommos.com"
   },
-  "license": "MIT",
+  "license": "Proprietary",
   "keywords": [
     "react",
     "typescript",
@@ -18,7 +18,7 @@
     "responsive-design"
   ],
   "private": true,
-  "version": "1.1.0",
+  "version": "1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

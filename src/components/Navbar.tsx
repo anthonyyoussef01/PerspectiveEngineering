@@ -14,9 +14,9 @@ import {
 
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
-import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LogoIcon } from "./Icons";
+import {Menu} from "lucide-react";
 
 interface RouteProps {
   href: string;
@@ -25,20 +25,24 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#services",
+    label: "Services",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#reviews",
+    label: "Reviews",
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "Portfolio",
+  },
+  {
+    href: "#pricing",
+    label: "About",
   },
   {
     href: "#faq",
-    label: "FAQ",
+    label: "Contact",
   },
 ];
 
@@ -55,7 +59,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              ShadcnUI/React
+              Perspective Engineering & Consulting
             </a>
           </NavigationMenuItem>
 
@@ -129,15 +133,19 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://www.facebook.com/profile.php?id=61560803636778"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                   className="lucide lucide-facebook mr-2 w-5 h-5">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+              Facebook
             </a>
 
-            <ModeToggle />
+            <ModeToggle/>
           </div>
         </NavigationMenuList>
       </NavigationMenu>
