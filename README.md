@@ -1,59 +1,38 @@
-# Shadcn/UI Landing Page Template
+# Perspective Engineering
 
-## <a href="https://ui.shadcn.com/" target="_blank">ShadcnUI</a> + <a href="https://react.dev/" target="_blank">React</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
+This is a Shadcn/UI website for an engineering consulting company called Perspective Engineering. The project is inspired by [leoMirandaa's Shadcn Landing Page](https://github.com/leoMirandaa/shadcn-landing-page).
 
-![shadch-landing-page](https://github.com/leoMirandaa/shadcn-landing-page/assets/61714687/3ba7b51f-9589-4541-800a-5ab7cecad1b5)
+## Technologies Used
 
-Your Trusted Partner for MEP Engineering and Design. <a href="https://shadcn-landing-page.vercel.app/" target="_blank">Live Demo</a>
+- TypeScript
+- JavaScript
+- Shadcn/UI
+- Next.js
+- Tailwind CSS
 
-## Sections
+## Project Structure
 
-- [x] Navbar
-- [x] Sidebar(mobile)
-- [x] Hero
-- [x] Sponsors
-- [x] About
-- [x] Stats
-- [x] How It Works
-- [x] Features
-- [x] Services
-- [x] Call-to-Action (CTA)
-- [x] Testimonials
-- [x] Team
-- [x] Pricing
-- [x] Newsletter
-- [x] Frequently Asked Questions(FAQ)
-- [x] Footer
+- `src/App.tsx`: Main application component.
+- `src/App.css`: Main CSS file for styling.
+- `src/index.css`: Additional CSS for global styles.
 
-## Features
+## Getting Started
 
-- [x] Fully Responsive Design
-- [x] User Friendly Navigation
-- [x] Dark Mode
-- [x] Meta tags
+To get started with the project, follow these steps:
 
-## How to install
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/leoMirandaa/shadcn-landing-page.git
-```
-
-2. Go into project
-
-```bash
-cd shadcn-landing-page
-```
-
-3. Install dependencies
-
-```bash
-npm install
-```
-
-4. Run project
-
-```bash
-npm run dev
-```
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+    ```
+1. Navigate to the project directory:
+   ```sh
+    cd perspective-engineering
+    ```
+1. Install dependencies:
+   ```sh
+    npm install
+    ```
+1. Run the development server:
+   ```sh
+    npm run dev
+    ```
