@@ -120,54 +120,70 @@ export const Team = () => {
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
-        {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
-            <Card
-              key={name}
-              className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
-            >
-              <CardHeader className="mt-8 flex justify-center items-center pb-2">
-                <img
-                  src={imageUrl}
-                  alt={`${name} ${position}`}
-                  className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"
-                />
-                <CardTitle className="text-center">{name}</CardTitle>
-                <CardDescription className="text-primary">
-                  {position}
-                </CardDescription>
-              </CardHeader>
+        {/*{teamList.map(*/}
+        {/*  ({ imageUrl, name, position, socialNetworks }: TeamProps) => (*/}
+        {/*    <Card*/}
+        {/*      key={name}*/}
+        {/*      className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"*/}
+        {/*    >*/}
+        {/*      <CardHeader className="mt-8 flex justify-center items-center pb-2">*/}
+        {/*        <img*/}
+        {/*          src={imageUrl}*/}
+        {/*          alt={`${name} ${position}`}*/}
+        {/*          className="absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover"*/}
+        {/*        />*/}
+        {/*        <CardTitle className="text-center">{name}</CardTitle>*/}
+        {/*        <CardDescription className="text-primary">*/}
+        {/*          {position}*/}
+        {/*        </CardDescription>*/}
+        {/*      </CardHeader>*/}
 
-              <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </CardContent>
+        {/*      <CardContent className="text-center pb-2">*/}
+        {/*        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>*/}
+        {/*      </CardContent>*/}
 
-              <CardFooter>
-                {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (
-                  <div key={name}>
-                    <a
-                      rel="noreferrer noopener"
-                      href={url}
-                      target="_blank"
-                      className={buttonVariants({
-                        variant: "ghost",
-                        size: "sm",
-                      })}
-                    >
-                      <span className="sr-only">{name} icon</span>
-                      {socialIcon(name)}
-                    </a>
-                  </div>
-                ))}
-              </CardFooter>
-            </Card>
-          )
-        )}
+        {/*      <CardFooter>*/}
+        {/*        {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (*/}
+        {/*          <div key={name}>*/}
+        {/*            <a*/}
+        {/*              rel="noreferrer noopener"*/}
+        {/*              href={url}*/}
+        {/*              target="_blank"*/}
+        {/*              className={buttonVariants({*/}
+        {/*                variant: "ghost",*/}
+        {/*                size: "sm",*/}
+        {/*              })}*/}
+        {/*            >*/}
+        {/*              <span className="sr-only">{name} icon</span>*/}
+        {/*              {socialIcon(name)}*/}
+        {/*            </a>*/}
+        {/*          </div>*/}
+        {/*        ))}*/}
+        {/*      </CardFooter>*/}
+        {/*    </Card>*/}
+        {/*  )*/}
+        {/*)}*/}
+        <Card className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center">
+          <CardHeader className="mt-8 flex justify-center items-center pb-2">
+            <img
+                src="https://media-lga3-1.cdn.whatsapp.net/v/t61.24694-24/409039660_349385954796302_1906468738147331685_n.jpg?ccb=11-4&oh=01_Q5AaIC-Pthi0CZqPC0tPGvlT8lsHUpgBieb_F2B-2dej-0gB&oe=66C7A6CA&_nc_sid=5e03e0&_nc_cat=111"
+                alt="user avatar"
+                className="absolute grayscale-[0%] -top-12 rounded-lg w-24 h-24 aspect-square object-cover"
+            />
+            <CardTitle className="text-center pb-3">Peter Ashaya</CardTitle>
+          </CardHeader>
+
+          <CardContent className="text-center pb-2">
+            <img
+                src="/peter-qr.png"
+                alt="I am a P.E. licensed professional engineer with extensive experience electrical and mechanical system design, & PMP® projects and contracts management."
+                className="rounded-full w-44 aspect-square object-cover"
+            />
+          </CardContent>
+        </Card>
       </div>
     </section>
   );

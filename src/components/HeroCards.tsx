@@ -50,7 +50,7 @@ export const HeroCards = () => {
 
         <CardContent className="text-center pb-2">
           <p>
-            I bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            I am a P.E. licensed professional engineer with extensive experience electrical and mechanical system design, & PMP® projects and contracts management.
           </p>
         </CardContent>
 
@@ -109,44 +109,9 @@ export const HeroCards = () => {
 
       {/* Pricing */}
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
-        <CardHeader className="flex flex-row items-center gap-4 pb-2">
-          <Avatar>
-            <AvatarImage
-                alt=""
-                src="https://github.com/shadcn.png"
-            />
-            <AvatarFallback>SH</AvatarFallback>
-          </Avatar>
-
-          <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
-          </div>
-        </CardHeader>
-
-        <CardContent>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum.
+        <CardContent className="mt-6">
+          We are a leading provider of MEP (Mechanical, Electrical, Plumbing, and Fire Protection) Engineering and Design services in the tristate area. Our team of registered, licensed PE engineers can assist with a variety of projects, including hospitals, residential buildings, apartments, and educational institutions.
         </CardContent>
-      </Card>
-
-      {/* Service */}
-      <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
-        <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-          <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
-            <LightBulbIcon />
-          </div>
-          <div>
-            <CardTitle>Light & dark mode</CardTitle>
-            <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
-            </CardDescription>
-          </div>
-        </CardHeader>
       </Card>
     </div>
   );
