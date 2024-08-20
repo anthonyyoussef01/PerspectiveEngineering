@@ -25,6 +25,10 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "#about",
+    label: "About",
+  },
+  {
     href: "#services",
     label: "Services",
   },
@@ -33,12 +37,12 @@ const routeList: RouteProps[] = [
     label: "Reviews",
   },
   {
-    href: "#pricing",
-    label: "Portfolio",
+    href: "#team",
+    label: "Meet the team",
   },
   {
     href: "#pricing",
-    label: "About",
+    label: "Projects",
   },
   {
     href: "#faq",
@@ -57,9 +61,14 @@ export const Navbar = () => {
               rel="noreferrer noopener"
               href="/"
               className="ml-2 font-bold text-xl flex"
+              draggable={false}
             >
-              <LogoIcon />
-              Perspective Engineering & Consulting
+              <img
+                src="/header-logo.png"
+                alt="Perspective Engineering & Consulting"
+                className="h-9 w-auto"
+                draggable={false}
+                />
             </a>
           </NavigationMenuItem>
 

@@ -5,8 +5,9 @@ import { HowItWorks } from "./components/HowItWorks";
 import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
-import { Testimonials } from "./components/Testimonials";
+import { Reviews } from "./components/Reviews.tsx";
 import "./App.css";
+import {Team} from "@/components/Team.tsx";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
       <HowItWorks />
       <Services />
       {/*<Cta />*/}
-      <Testimonials />
-      {/*<Team />*/}
+      <Reviews />
+      <Team />
       {/*<FAQ />*/}
       <Footer />
       <ScrollToTop />
