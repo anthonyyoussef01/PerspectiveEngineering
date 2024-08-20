@@ -19,19 +19,17 @@ export const HeroCards = () => {
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
             <AvatarImage
-              alt=""
-              src="https://github.com/shadcn.png"
+              alt="Daniel Gendy"
             />
             <AvatarFallback>SH</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Daniel Gendy</CardTitle>
           </div>
         </CardHeader>
 
-        <CardContent>Perspective Engineering is awesome!</CardContent>
+        <CardContent>Responsive, Helpful, and Quality work!</CardContent>
       </Card>
 
       {/* Team */}

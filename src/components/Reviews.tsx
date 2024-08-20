@@ -10,52 +10,34 @@ import {
 interface TestimonialProps {
   image: string;
   name: string;
-  userName: string;
   comment: string;
 }
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "Perspective Engineering & Consulting is awesome!",
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjV_SbgZUR8Y4r2kx9QKT_Tc7iWGtkVpaWbHbAjsYyOGBxaMb2c=s54-c-rp-mo-ba3-br100",
+    name: "Samuel Andraws",
+    comment: "Peter is a fantastic engineer! He consistently delivers high-quality work and is always punctual, which is a major plus. His experience truly shines through in his problem-solving abilities. I highly recommend Peter for any mechanical, electrical, or HVAC engineering design or inspection projects. Thanks Peter for all the work you have done for us.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
-    comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    image: "https://lh3.googleusercontent.com/a/ACg8ocLCUoEsD6xHprTPMBg4r8XhB94ZtTUUcz8QP3GAKMN_0s-Xwg=s54-c-rp-mo-br100",
+    name: "Nermin Ayoub",
+    comment: "Perspective Engineering & Consulting is a unique MEP firm , costumer oriented, do their best to comply with standards/codes , costumer requirements & budget.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    image: "https://lh3.googleusercontent.com/a/ACg8ocKsvPqdSW_ilz8vvNm5NWp6_xYnMSXOuNv3WjHvdg34Gj3u8A=s54-c-rp-mo-br100",
+    name: "Sarah Abdelmassih",
+    comment: "I had a fantastic experience with them . The team was professional, knowledgeable, and went above and beyond to ensure I was satisfied with their service., and I highly recommend them to anyone in need of their services. Thank you for a job well done!",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+    image: "https://lh3.googleusercontent.com/a/ACg8ocI7f-Bb9s0ottpTCXSHpnvDz3Obc1_PcKO2XUfKwWULwlbT_Q=s54-c-rp-mo-br100",
+    name: "Theodore Earley",
+    comment: "Great service, nice experience with honesty consulting.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "https://lh3.googleusercontent.com/a/ACg8ocIy6ki8hO5Upa8Hp4dU5AdISQ3zyZqAnctKtv-i0XGL0ge37Q=s54-c-rp-mo-br100",
+    name: "Mireille Zaky",
+    comment: "Amazing services provided. Peter is a pleasure to work with. I would highly recommend.",
   },
 ];
 
@@ -69,27 +51,25 @@ export const Reviews = () => {
         Discover Why
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          Clients Prefer{" "}
         </span>
         Perspective Engineering & Consulting
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {testimonials.map(
-          ({ image, name, userName, comment }: TestimonialProps) => (
+          ({ image, name, comment }: TestimonialProps) => (
             <Card
-              key={userName}
+              key={name}
               className="max-w-md md:break-inside-avoid overflow-hidden"
             >
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Avatar>
                   <AvatarImage
-                    alt=""
+                    alt={name}
                     src={image}
                   />
                   <AvatarFallback>OM</AvatarFallback>
@@ -97,7 +77,6 @@ export const Reviews = () => {
 
                 <div className="flex flex-col">
                   <CardTitle className="text-lg">{name}</CardTitle>
-                  <CardDescription>{userName}</CardDescription>
                 </div>
               </CardHeader>
 
