@@ -5,26 +5,40 @@ export const Hero = () => {
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
-          <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#A8E6CF] to-[#56C596] text-transparent bg-clip-text">
-              Perspective
-            </span>{" "}
-            Engineering & Consulting
-          </h1>{" "}
-          for{" "}
-          <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#FFA500] via-[#FFBF71] to-[#FF7F50] text-transparent bg-clip-text">
-              MEP Projects
-            </span>{" "}
-            and Designs
-          </h2>
+          {/*<h1 className="inline">*/}
+          {/*  <span className="inline bg-gradient-to-r from-[#A8E6CF] to-[#56C596] text-transparent bg-clip-text">*/}
+          {/*    Perspective*/}
+          {/*  </span>{" "}*/}
+          {/*  Engineering & Consulting*/}
+          {/*</h1>{" "}*/}
+          {/*for{" "}*/}
+          {/*<h2 className="inline">*/}
+          {/*  <span className="inline bg-gradient-to-r from-[#FFA500] via-[#FFBF71] to-[#FF7F50] text-transparent bg-clip-text">*/}
+          {/*    MEP Projects*/}
+          {/*  </span>{" "}*/}
+          {/*  and Designs*/}
+          {/*</h2>*/}
+          <div className="lg:col-span-2 text-center">
+              <img
+                src="/logo-name-glow.png"
+                alt="We'll engineer your vision"
+                className="max-h-96 object-cover"
+                draggable="false"
+              />
+          </div>
         </main>
 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          We are a leading MEP Engineering and Design service provider in the tristate area. We assist with various
-          projects, including hospitals, residential buildings, apartments, and educational institutions. Our team
-          consists of registered, licensed PE engineers.
-        </p>
+        {/*<p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">*/}
+        {/*  We are a leading MEP Engineering and Design service provider in the tristate area. We assist with various*/}
+        {/*  projects, including hospitals, residential buildings, apartments, and educational institutions. Our team*/}
+        {/*  consists of registered, licensed PE engineers.*/}
+        {/*</p>*/}
+        <img
+          src="/motto.png"
+          alt="Hero Image"
+          className="max-h-96 object-cover"
+          draggable="false"
+        />
       </div>
 
       {/* Hero cards sections */}

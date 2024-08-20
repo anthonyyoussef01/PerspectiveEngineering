@@ -2,6 +2,25 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative;
+  background: url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-size: inherit;
+  filter: blur(3px) brightness(1.1) saturate(0.4) contrast(0.9);
+  z-index: -1; /* Ensure it is behind the text */
+}
+
 /* HeroCards background shadow */
 .shadow {
   position: absolute;
@@ -28,6 +47,13 @@ html {
 }
 
 @media (max-width: 1024px) {
+  body {
+    background: none;
+  }
+  body::before {
+    display: none;
+  }
+
   .shadow {
     top: 70px;
   }
