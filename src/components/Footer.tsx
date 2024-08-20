@@ -59,7 +59,7 @@ export const Footer = () => {
                             href="#team"
                             className="opacity-60 hover:opacity-100"
                         >
-                            Meet the Team
+                            Meet The Team
                         </a>
                     </div>
 

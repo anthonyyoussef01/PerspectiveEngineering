@@ -14,8 +14,6 @@ import {
 
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
-import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
 import {Menu} from "lucide-react";
 
 interface RouteProps {
@@ -38,14 +36,14 @@ const routeList: RouteProps[] = [
   },
   {
     href: "#team",
-    label: "Meet the team",
+    label: "Meet The Team",
   },
   {
-    href: "#pricing",
+    href: "/projects",
     label: "Projects",
   },
   {
-    href: "#faq",
+    href: "/contact",
     label: "Contact",
   },
 ];
