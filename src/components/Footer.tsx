@@ -12,8 +12,12 @@ export const Footer = () => {
                         href="/"
                         className="font-bold text-xl flex"
                     >
-                        <LogoIcon/>
-                        Perspective Engineering & Consulting
+                        <img
+                            src="/header-logo.png"
+                            alt="logo"
+                            className="max-h-14 w-auto"
+                            draggable={false}
+                        />
                     </a>
                 </div>
 
@@ -22,30 +26,50 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#"
-                            className="opacity-60 hover:opacity-100"
-                        >
-                            Home
-                        </a>
-                    </div>
-
-                    <div>
-                        <a
-                            rel="noreferrer noopener"
-                            href="#"
-                            className="opacity-60 hover:opacity-100"
-                        >
-                            Portfolio
-                        </a>
-                    </div>
-
-                    <div>
-                        <a
-                            rel="noreferrer noopener"
-                            href="#"
+                            href="#about"
                             className="opacity-60 hover:opacity-100"
                         >
                             About
+                        </a>
+                    </div>
+
+                    <div>
+                        <a
+                            rel="noreferrer noopener"
+                            href="#services"
+                            className="opacity-60 hover:opacity-100"
+                        >
+                            Services
+                        </a>
+                    </div>
+
+                    <div>
+                        <a
+                            rel="noreferrer noopener"
+                            href="#reviews"
+                            className="opacity-60 hover:opacity-100"
+                        >
+                            Reviews
+                        </a>
+                    </div>
+
+                    <div>
+                        <a
+                            rel="noreferrer noopener"
+                            href="#team"
+                            className="opacity-60 hover:opacity-100"
+                        >
+                            Meet the Team
+                        </a>
+                    </div>
+
+                    <div>
+                        <a
+                            rel="noreferrer noopener"
+                            href="#"
+                            className="opacity-60 hover:opacity-100"
+                        >
+                            Projects
                         </a>
                     </div>
 
@@ -86,19 +110,19 @@ export const Footer = () => {
                 <div className="flex flex-col gap-2">
                     <h3 className="font-bold text-lg">Perspective Engineering & Consulting</h3>
                     <h2 className="text-sm">
-                        1234 Street Name, <br/>
-                        City Name, United States
+                        8 High Tor Rd, <br/>
+                        New City, NY 10956
                     </h2>
                     <h2 className="text-sm">
-                        +1 234 567 8901
+                        +1 (845) 459-9467
                     </h2>
                     <h2 className="text-sm">
                         <a
                             rel="noreferrer noopener"
-                            href="mailto:email@email.com"
+                            href="peter@PEC-MEP.com"
                             className="opacity-60 hover:opacity-100"
                         >
-                            email@email.com
+                            peter@PEC-MEP.com
                         </a>
                     </h2>
                 </div>

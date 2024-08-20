@@ -56,7 +56,7 @@ export const HeroCards = () => {
           <div>
             <a
                 rel="noreferrer noopener"
-                href="mailto:email@email.com"
+                href="mailto:peter@PEC-MEP.com"
                 target="_blank"
                 className={buttonVariants({
                   variant: "ghost",
