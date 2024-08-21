@@ -42,7 +42,7 @@ const Projects = () => {
             key={index}
             src={src}
             alt={`Project ${index + 1}`}
-            className="w-full h-auto cursor-pointer rounded-lg shadow-lg"
+            className="w-full h-auto cursor-pointer rounded-lg shadow-lg transition-all duration-500 hover:brightness-125"
             onClick={() => openModal(index)}
           />
         ))}
