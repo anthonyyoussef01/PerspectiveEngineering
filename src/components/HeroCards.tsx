@@ -1,4 +1,3 @@
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -9,46 +8,51 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
-import { LightBulbIcon } from "./Icons";
 
 export const HeroCards = () => {
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
-      <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[384px] -top-[0px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
-          <Avatar>
-            <AvatarImage
-              alt="Daniel Gendy"
-            />
-            <AvatarFallback>SH</AvatarFallback>
-          </Avatar>
-
           <div className="flex flex-col">
-            <CardTitle className="text-lg">Daniel Gendy</CardTitle>
+            <CardTitle className="text-lg">Tools we use</CardTitle>
           </div>
         </CardHeader>
 
-        <CardContent>Responsive, Helpful, and Quality work!</CardContent>
+        <CardContent className="flex flex-row gap-1">
+          <img src="/bld.jpg" alt="BLD" className="size-5 md:size-6 rounded"/>
+          <img src="/blowdryer.jpg" alt="" className="size-5 md:size-6 rounded"/>
+          <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-6 rounded"/>
+          <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-6 rounded"/>
+          <img src="/i360.jpg" alt="I 360" className="size-5 md:size-6 rounded"/>
+          <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-6 rounded"/>
+          <img src="/lg.jpg" alt="LG" className="size-5 md:size-6 rounded"/>
+          <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-6 rounded"/>
+          <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-6 rounded"/>
+          <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-6 rounded"/>
+        </CardContent>
       </Card>
 
       {/* Team */}
-      <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card
+          className="absolute right-[20px] top-4 w-72 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
             src="https://media-lga3-1.cdn.whatsapp.net/v/t61.24694-24/409039660_349385954796302_1906468738147331685_n.jpg?ccb=11-4&oh=01_Q5AaIC-Pthi0CZqPC0tPGvlT8lsHUpgBieb_F2B-2dej-0gB&oe=66C7A6CA&_nc_sid=5e03e0&_nc_cat=111"
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Peter Ashaya</CardTitle>
+          <CardTitle className="text-center">Peter Ashaya, PE PMP®</CardTitle>
           <CardDescription className="font-normal text-primary">
-            PE Engineer
+            Principal Engineer
           </CardDescription>
         </CardHeader>
 
         <CardContent className="text-center pb-2">
           <p>
-            I am a P.E. licensed professional engineer with extensive experience electrical and mechanical system design, & PMP® projects and contracts management.
+            I am a P.E. licensed professional engineer with extensive experience electrical and mechanical system
+            design, & PMP® projects and contracts management.
           </p>
         </CardContent>
 
@@ -106,9 +110,30 @@ export const HeroCards = () => {
       </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[120px] left-[0px] w-96  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardContent className="mt-6">
-          We are a leading provider of MEP (Mechanical, Electrical, Plumbing, and Fire Protection) Engineering and Design services in the tristate area. Our team of registered, licensed PE engineers can assist with a variety of projects, including hospitals, residential buildings, apartments, and educational institutions.
+          <p className="text-sm pb-1">
+            We are a full service consulting firm with a team of highly trained, experienced, and professional
+            mechanical, electrical, plumbing, fire alarm and fire protection engineers providing planning, engineering,
+            and consulting expertise to both public and private sector clients.
+          </p>
+          <p className="text-sm pb-1">
+            We stay current with the latest tools and technology. We are well equipped with Trade Specific software
+            tools. Our technology solutions include the following:
+          </p>
+          <ul className="list-disc list-inside text-sm pl-2">
+            <li>Revit MEP</li>
+            <li>AutoCAD</li>
+            <li>Autodesk Built</li>
+            <li>Autodesk Insights</li>
+            <li>Mitsubishi Diamond System Builder</li>
+            <li>LG LATS</li>
+            <li>HAP 6.2</li>
+            <li>Duct Sizer</li>
+            <li>Pipe Sizer</li>
+            <li>TITUS TEAMS Selection</li>
+            <li>KRUEGER RGD Selection</li>
+          </ul>
         </CardContent>
       </Card>
     </div>

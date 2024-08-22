@@ -2,7 +2,7 @@ import {LogoIcon} from "./Icons";
 
 export const Footer = () => {
     return (
-        <footer id="footer">
+        <footer id="footer" className="bg-gray-100">
             <hr className="w-11/12 mx-auto"/>
 
             <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
@@ -29,7 +29,7 @@ export const Footer = () => {
                             href="#about"
                             className="opacity-60 hover:opacity-100"
                         >
-                            About
+                            About Us
                         </a>
                     </div>
 
@@ -79,7 +79,7 @@ export const Footer = () => {
                             href="#"
                             className="opacity-60 hover:opacity-100"
                         >
-                            Contact
+                            Contact Us
                         </a>
                     </div>
                 </div>

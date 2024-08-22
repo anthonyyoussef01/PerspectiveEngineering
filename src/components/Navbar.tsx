@@ -24,7 +24,7 @@ interface RouteProps {
 const routeList: RouteProps[] = [
   {
     href: "/#about",
-    label: "About",
+    label: "About Us",
   },
   {
     href: "/#services",
@@ -44,7 +44,7 @@ const routeList: RouteProps[] = [
   },
   {
     href: "/contact",
-    label: "Contact",
+    label: "Contact Us",
   },
 ];
 
@@ -90,7 +90,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Perspective Engineering & Consulting
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">

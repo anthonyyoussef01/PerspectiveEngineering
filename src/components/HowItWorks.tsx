@@ -43,16 +43,16 @@ export const HowItWorks = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
         {features.map(({ title }: FeatureProps) => (
-          <Card
-            key={title}
-            className="bg-muted/50"
-          >
-            <CardHeader>
-              <CardTitle className="grid gap-4 place-items-center text-md lg:text-lg">
-                {title}
-              </CardTitle>
-            </CardHeader>
-          </Card>
+            <Card
+                key={title}
+                className="bg-muted/80"
+            >
+              <CardHeader className="flex items-center justify-center h-full">
+                <CardTitle className="text-md">
+                  {title}
+                </CardTitle>
+              </CardHeader>
+            </Card>
         ))}
       </div>
     </section>
