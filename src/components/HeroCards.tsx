@@ -21,17 +21,19 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent className="flex flex-row gap-1">
-          <img src="/bld.jpg" alt="BLD" className="size-5 md:size-7 rounded"/>
-          <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-7 rounded"/>
-          <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-7 rounded"/>
-          <img src="/i360.jpg" alt="I 360" className="size-5 md:size-7 rounded"/>
-          <img src="/blowdryer.jpg" alt="" className="size-5 md:size-7 rounded"/>
-          <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-7 rounded"/>
-          <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-7 rounded"/>
-          <img src="/lg.jpg" alt="LG" className="size-5 md:size-7 rounded"/>
-          <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-7 rounded"/>
-          <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-7 rounded"/>
-          <img src="/diamond-builder.jpg" alt="DiamondBuilder" className="size-5 md:size-7 rounded"/>
+          <img src="/bld.jpg" alt="BLD" className="size-5 md:size-9 rounded"/>
+          <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-9 rounded"/>
+          <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-9 rounded"/>
+          <img src="/i360.jpg" alt="I 360" className="size-5 md:size-9 rounded"/>
+          <img src="/blowdryer.jpg" alt="" className="size-5 md:size-9 rounded"/>
+          <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-9 rounded"/>
+          <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-9 rounded"/>
+          <img src="/lg.jpg" alt="LG" className="size-5 md:size-9 rounded"/>
+        </CardContent>
+        <CardContent className="flex flex-row gap-1">
+          <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-9 rounded"/>
+          <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-9 rounded"/>
+          <img src="/diamond-builder.jpg" alt="DiamondBuilder" className="size-5 md:size-9 rounded"/>
         </CardContent>
       </Card>
 
@@ -111,7 +113,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[120px] left-[0px] w-96  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[190px] left-[0px] w-96  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardContent className="mt-6">
           <p className="text-sm pb-1">
             We are a full service consulting firm with a team of highly trained, experienced, and professional
