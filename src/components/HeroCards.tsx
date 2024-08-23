@@ -21,22 +21,23 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent className="flex flex-row gap-1">
-          <img src="/bld.jpg" alt="BLD" className="size-5 md:size-6 rounded"/>
-          <img src="/blowdryer.jpg" alt="" className="size-5 md:size-6 rounded"/>
-          <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-6 rounded"/>
-          <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-6 rounded"/>
-          <img src="/i360.jpg" alt="I 360" className="size-5 md:size-6 rounded"/>
-          <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-6 rounded"/>
-          <img src="/lg.jpg" alt="LG" className="size-5 md:size-6 rounded"/>
-          <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-6 rounded"/>
-          <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-6 rounded"/>
-          <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-6 rounded"/>
+          <img src="/bld.jpg" alt="BLD" className="size-5 md:size-7 rounded"/>
+          <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-7 rounded"/>
+          <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-7 rounded"/>
+          <img src="/i360.jpg" alt="I 360" className="size-5 md:size-7 rounded"/>
+          <img src="/blowdryer.jpg" alt="" className="size-5 md:size-7 rounded"/>
+          <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-7 rounded"/>
+          <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-7 rounded"/>
+          <img src="/lg.jpg" alt="LG" className="size-5 md:size-7 rounded"/>
+          <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-7 rounded"/>
+          <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-7 rounded"/>
+          <img src="/diamond-builder.jpg" alt="DiamondBuilder" className="size-5 md:size-7 rounded"/>
         </CardContent>
       </Card>
 
       {/* Team */}
       <Card
-          className="absolute right-[20px] top-4 w-72 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+          className="absolute right-[71px] top-4 w-60 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
             src="/peter.jpg"

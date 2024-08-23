@@ -61,12 +61,20 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
               draggable={false}
             >
-              <img
-                src="/header-logo.png"
-                alt="Perspective Engineering & Consulting"
-                className="h-9 w-auto"
-                draggable={false}
+              <div>
+                <img
+                    src="/header-logo.png"
+                    alt="Perspective Engineering & Consulting"
+                    className="h-9 w-auto block md:hidden lg:block"
+                    draggable={false}
                 />
+                <img
+                    src="/logo.png"
+                    alt="Perspective Engineering & Consulting"
+                    className="h-9 w-auto hidden md:block lg:hidden"
+                    draggable={false}
+                />
+              </div>
             </a>
           </NavigationMenuItem>
 

@@ -118,7 +118,7 @@ export const Team = () => {
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
       </p>
 
-      <div className="flex flex-row gap-8">
+      <div className="flex gap-8 flex-col md:flex-row">
         {/*{teamList.map(*/}
         {/*  ({ imageUrl, name, position, socialNetworks }: TeamProps) => (*/}
         {/*    <Card*/}

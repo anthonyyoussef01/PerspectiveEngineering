@@ -87,7 +87,7 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#"
+                            href="https://www.facebook.com/profile.php?id=61560803636778"
                             className="opacity-60 hover:opacity-100"
                         >
                             Facebook
@@ -97,7 +97,7 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#"
+                            href="https://www.linkedin.com/in/peterashayapepmp/"
                             className="opacity-60 hover:opacity-100"
                         >
                             LinkedIn
