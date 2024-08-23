@@ -64,7 +64,7 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#"
+                            href="/projects"
                             className="opacity-60 hover:opacity-100"
                         >
                             Projects
@@ -74,7 +74,7 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#"
+                            href="/contact"
                             className="opacity-60 hover:opacity-100"
                         >
                             Contact Us
@@ -117,7 +117,7 @@ export const Footer = () => {
                     <h2 className="text-sm">
                         <a
                             rel="noreferrer noopener"
-                            href="peter@PEC-MEP.com"
+                            href="mailto:peter@PEC-MEP.com"
                             className="opacity-60 hover:opacity-100"
                         >
                             peter@PEC-MEP.com
@@ -135,7 +135,7 @@ export const Footer = () => {
                         href="https://www.elkommos.com"
                         className="text-primary transition-all border-primary hover:border-b-2"
                     >
-                        Anthony Elkommos Youssef
+                        EY Digital Solutions
                     </a>
                 </h3>
             </section>
