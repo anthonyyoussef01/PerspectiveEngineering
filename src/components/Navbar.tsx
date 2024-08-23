@@ -12,9 +12,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
-import {Menu} from "lucide-react";
+import {FacebookIcon, Menu} from "lucide-react";
 
 interface RouteProps {
   href: string;
@@ -115,14 +114,14 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://www.facebook.com/profile.php?id=61560803636778"
                     target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
+                    className={`w-[120px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    <FacebookIcon className="w-5 h-5 mr-2"/>
+                    Facebook
                   </a>
                 </nav>
               </SheetContent>
