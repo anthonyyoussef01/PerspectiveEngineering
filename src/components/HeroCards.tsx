@@ -39,7 +39,7 @@ export const HeroCards = () => {
           className="absolute right-[20px] top-4 w-72 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
-            src="https://media-lga3-1.cdn.whatsapp.net/v/t61.24694-24/409039660_349385954796302_1906468738147331685_n.jpg?ccb=11-4&oh=01_Q5AaIC-Pthi0CZqPC0tPGvlT8lsHUpgBieb_F2B-2dej-0gB&oe=66C7A6CA&_nc_sid=5e03e0&_nc_cat=111"
+            src="/peter.jpg"
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />

@@ -169,7 +169,7 @@ export const Team = () => {
                 alt="user avatar"
                 className="absolute grayscale-[0%] -top-12 rounded-lg w-24 h-24 aspect-square object-cover"
             />
-            <CardTitle className="text-center pb-3">Peter Ashaya</CardTitle>
+            <CardTitle className="text-center pb-3">Peter Ashaya, PE PMP®</CardTitle>
           </CardHeader>
 
           <CardContent className="text-center pb-2 min-w-56">
