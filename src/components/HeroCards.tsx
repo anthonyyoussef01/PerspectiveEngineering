@@ -28,7 +28,7 @@ export const HeroCards = () => {
           <img src="/blowdryer.jpg" alt="" className="size-5 md:size-9 rounded"/>
           <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-9 rounded"/>
           <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-9 rounded"/>
-          <img src="/lg.jpg" alt="LG" className="size-5 md:size-9 rounded"/>
+          <img src="/lats-hvac.jpg" alt="LATS-HVAC" className="size-5 md:size-9 rounded"/>
         </CardContent>
         <CardContent className="flex flex-row gap-1">
           <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-9 rounded"/>
