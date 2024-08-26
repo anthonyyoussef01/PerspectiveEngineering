@@ -64,13 +64,13 @@ export const Navbar = () => {
                 <img
                     src="/header-logo.png"
                     alt="Perspective Engineering & Consulting"
-                    className="h-9 w-auto block md:hidden lg:block"
+                    className="h-9 w-auto block md:hidden lg:block object-contain"
                     draggable={false}
                 />
                 <img
                     src="/logo.png"
                     alt="Perspective Engineering & Consulting"
-                    className="h-9 w-auto hidden md:block lg:hidden"
+                    className="h-9 w-auto hidden md:block lg:hidden hide-below-805 object-contain"
                     draggable={false}
                 />
               </div>

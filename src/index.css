@@ -46,6 +46,12 @@ body::before {
   }
 }
 
+@media (max-width: 805px) {
+  .hide-below-805 {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .shadow {
     top: 70px;
