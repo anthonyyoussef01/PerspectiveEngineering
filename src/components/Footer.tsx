@@ -24,7 +24,7 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#about"
+                            href="/#about"
                             className="opacity-60 hover:opacity-100"
                         >
                             About Us
@@ -34,7 +34,7 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#services"
+                            href="/#services"
                             className="opacity-60 hover:opacity-100"
                         >
                             Services
@@ -44,7 +44,7 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#reviews"
+                            href="/#reviews"
                             className="opacity-60 hover:opacity-100"
                         >
                             Reviews
@@ -54,7 +54,7 @@ export const Footer = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="#team"
+                            href="/#team"
                             className="opacity-60 hover:opacity-100"
                         >
                             Meet The Team
