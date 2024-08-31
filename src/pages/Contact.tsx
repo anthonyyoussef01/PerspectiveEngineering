@@ -95,11 +95,15 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <img
-              className="object-cover rounded-lg md:max-w-72
-              "
-              src="/map.png"
-          />
+          <a
+              href="https://maps.app.goo.gl/WPYUy4bb3wgevh4x5"
+              className="object-cover rounded-lg md:max-w-72"
+          >
+            <img
+                className="object-cover w-full h-full rounded-lg"
+                src="/map.png"
+            />
+          </a>
         </div>
       </div>
   );
