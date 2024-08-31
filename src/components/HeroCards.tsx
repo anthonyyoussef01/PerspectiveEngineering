@@ -20,21 +20,24 @@ export const HeroCards = () => {
           </div>
         </CardHeader>
 
-        <CardContent className="flex flex-row gap-1">
-          <img src="/bld.jpg" alt="BLD" className="size-5 md:size-9 rounded"/>
-          <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-9 rounded"/>
-          <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-9 rounded"/>
-          <img src="/i360.jpg" alt="I 360" className="size-5 md:size-9 rounded"/>
-          <img src="/blowdryer.jpg" alt="" className="size-5 md:size-9 rounded"/>
-          <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-9 rounded"/>
-          <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-9 rounded"/>
-          <img src="/lats-hvac.jpg" alt="LATS-HVAC" className="size-5 md:size-9 rounded"/>
-        </CardContent>
-        <CardContent className="flex flex-row gap-1">
-          <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-9 rounded"/>
-          <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-9 rounded"/>
-          <img src="/diamond-builder.jpg" alt="DiamondBuilder" className="size-5 md:size-9 rounded"/>
-        </CardContent>
+        <div className="flex flex-col items-center justify-center">
+          <CardContent className="flex flex-row gap-1 justify-center">
+            <img src="/bld.jpg" alt="BLD" className="size-5 md:size-9 rounded"/>
+            <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-9 rounded"/>
+            <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-9 rounded"/>
+            <img src="/i360.jpg" alt="I 360" className="size-5 md:size-9 rounded"/>
+            <img src="/blowdryer.jpg" alt="" className="size-5 md:size-9 rounded"/>
+            <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-9 rounded"/>
+          </CardContent>
+          <CardContent className="flex flex-row gap-1 justify-center">
+            <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-9 rounded"/>
+            <img src="/lats-hvac.jpg" alt="LATS-HVAC" className="size-5 md:size-9 rounded"/>
+            <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-9 rounded"/>
+            <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-9 rounded"/>
+            <img src="/diamond-builder.jpg" alt="DiamondBuilder" className="size-5 md:size-9 rounded"/>
+            <img src="/trane.webp" alt="Trane" className="size-5 md:size-9 rounded"/>
+          </CardContent>
+        </div>
       </Card>
 
       {/* Team */}
