@@ -12,33 +12,6 @@ import { Linkedin } from "lucide-react";
 export const HeroCards = () => {
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
-      {/* Testimonial */}
-      <Card className="absolute w-[384px] -top-[0px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
-        <CardHeader className="flex flex-row items-center gap-4 pb-2">
-          <div className="flex flex-col">
-            <CardTitle className="text-lg">Tools we use</CardTitle>
-          </div>
-        </CardHeader>
-
-        <div className="flex flex-col items-center justify-center">
-          <CardContent className="flex flex-row gap-1 justify-center">
-            <img src="/bld.jpg" alt="BLD" className="size-5 md:size-9 rounded"/>
-            <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-9 rounded"/>
-            <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-9 rounded"/>
-            <img src="/i360.jpg" alt="I 360" className="size-5 md:size-9 rounded"/>
-            <img src="/blowdryer.jpg" alt="" className="size-5 md:size-9 rounded"/>
-            <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-9 rounded"/>
-          </CardContent>
-          <CardContent className="flex flex-row gap-1 justify-center">
-            <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-9 rounded"/>
-            <img src="/lats-hvac.jpg" alt="LATS-HVAC" className="size-5 md:size-9 rounded"/>
-            <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-9 rounded"/>
-            <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-9 rounded"/>
-            <img src="/diamond-builder.jpg" alt="DiamondBuilder" className="size-5 md:size-9 rounded"/>
-            <img src="/trane.webp" alt="Trane" className="size-5 md:size-9 rounded"/>
-          </CardContent>
-        </div>
-      </Card>
 
       {/* Team */}
       <Card
@@ -115,8 +88,36 @@ export const HeroCards = () => {
         </CardFooter>
       </Card>
 
-      {/* Pricing */}
-      <Card className="absolute top-[190px] left-[0px] w-96  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      {/* Tools */}
+      <Card className="absolute w-[384px] top-[401px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+        <CardHeader className="flex flex-row items-center gap-4 pb-2">
+          <div className="flex flex-col">
+            <CardTitle className="text-lg">Tools we use</CardTitle>
+          </div>
+        </CardHeader>
+
+        <div className="flex flex-col items-center justify-center">
+          <CardContent className="flex flex-row gap-1 justify-center">
+            <img src="/bld.jpg" alt="BLD" className="size-5 md:size-9 rounded"/>
+            <img src="/rvt.jpg" alt="RVT" className="size-5 md:size-9 rounded"/>
+            <img src="/cad.jpg" alt="AutoCad" className="size-5 md:size-9 rounded"/>
+            <img src="/i360.jpg" alt="I 360" className="size-5 md:size-9 rounded"/>
+            <img src="/blowdryer.jpg" alt="" className="size-5 md:size-9 rounded"/>
+            <img src="/hap-v6.jpg" alt="HAP v6" className="size-5 md:size-9 rounded"/>
+          </CardContent>
+          <CardContent className="flex flex-row gap-1 justify-center">
+            <img src="/k-select.jpg" alt="K-Select" className="size-5 md:size-9 rounded"/>
+            <img src="/lats-hvac.jpg" alt="LATS-HVAC" className="size-5 md:size-9 rounded"/>
+            <img src="/mcquay.jpg" alt="McQuay" className="size-5 md:size-9 rounded"/>
+            <img src="/titus.jpg" alt="Titus Teams Selection" className="size-5 md:size-9 rounded"/>
+            <img src="/diamond-builder.jpg" alt="DiamondBuilder" className="size-5 md:size-9 rounded"/>
+            <img src="/trane.webp" alt="Trane" className="size-5 md:size-9 rounded"/>
+          </CardContent>
+        </div>
+      </Card>
+
+      {/* About */}
+      <Card className="absolute top-[-62px] left-[0px] w-96  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardContent className="mt-6">
           <p className="text-sm pb-1">
             We are a full service consulting firm with a team of highly trained, experienced, and professional
