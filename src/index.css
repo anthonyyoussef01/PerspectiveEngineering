@@ -4,8 +4,8 @@ html {
 
 body {
   position: relative;
-  background: url('/background.jpg') no-repeat center center fixed;
   background-size: cover;
+  background: url('/background.jpg') no-repeat fixed center center;
 }
 
 body::before {
@@ -33,6 +33,13 @@ body::before {
   height: 400px;
   filter: blur(150px);
   animation: shadow-slide infinite 4s linear alternate;
+}
+
+/* iOS specific fix */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: fixed;
+  }
 }
 
 @keyframes shadow-slide {
