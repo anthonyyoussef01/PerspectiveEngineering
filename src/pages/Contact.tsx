@@ -98,6 +98,8 @@ const Contact = () => {
           </div>
           <a
               href="https://maps.app.goo.gl/WPYUy4bb3wgevh4x5"
+              target="_blank"
+              rel="noreferrer noopener"
               className="object-cover rounded-lg md:max-w-72"
           >
             <img
