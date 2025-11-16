@@ -237,7 +237,7 @@ export const Team = () => {
           Engineering and Design service providers in the tristate area. We have successfully completed more than 45
           Projects within 2023 and we can assist you in any kind of projects ranging from Hospitals, Residential
           ,Apartments, Education, Mixed Use etc. We are a team of MEP professional designers, HVAC, Electrical,
-          Plumbing, Fire alarm and Fire protection.
+          Structural, Plumbing, Fire alarm and Fire protection.
         </p>
         <p className="text-sm">
           Our design team worked together in large range of occupancy projects:
@@ -253,7 +253,7 @@ export const Team = () => {
         <p className="text-sm">
           Licensed in many states, we provide our services in: {" "}
           <span className="text-gray-700">
-            NY (PE# 10693), NJ (PE# 24GE06036000), CT (PE# 31301), SC (PE# 42922), TX (PE# 124382)
+            NY (PE# 10693), NJ (PE# 24GE06036000), CT (PE# 31301), SC (PE# 42922), TX (PE# 124382), FL (PE# 101427)
           </span>
         </p>
       </div>

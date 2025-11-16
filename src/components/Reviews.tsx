@@ -65,7 +65,10 @@ export const Reviews = () => {
       <p className="text-xl text-muted-foreground pt-4 pb-8">
       </p>
 
-      <a href="https://www.google.com/search?q=Perspective+Engineering+%26+Consulting&rlz=1C1UEAD_enUS1088US1088&oq=per&gs_lcrp=EgZjaHJvbWUqCAgBEEUYJxg7MgYIABBFGDwyCAgBEEUYJxg7MhUIAhAuGEMYxwEYsQMY0QMYgAQYigUyBggDEEUYPTIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPDIGCAcQRRhB0gEINjE4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#">
+      <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.google.com/search?q=Perspective+Engineering+%26+Consulting&rlz=1C1UEAD_enUS1088US1088&oq=per&gs_lcrp=EgZjaHJvbWUqCAgBEEUYJxg7MgYIABBFGDwyCAgBEEUYJxg7MhUIAhAuGEMYxwEYsQMY0QMYgAQYigUyBggDEEUYPTIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPDIGCAcQRRhB0gEINjE4NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8&sei=Ii0Zab_CJ-uqw8cPlpX2-AM&zx=1763257636861&no_sw_cr=1#lrd=0x89c2c32e51af445b:0x3067f14c6fb26226,1">
         <img src="/reviews.png" className="h-14 rounded-lg" />
       </a>
 

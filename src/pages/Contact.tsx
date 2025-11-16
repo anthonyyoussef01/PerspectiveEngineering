@@ -66,7 +66,8 @@ const Contact = () => {
 
         <div className="bg-muted border rounded-lg p-8 flex flex-col md:flex-row gap-4 lg:gap-16">
           <div className="min-w-52">
-            <h2 className="text-2xl font-bold mb-4">Perspective Engineering Consulting PLLC</h2>
+            <h2 className="text-2xl font-bold">Perspective Engineering Consulting PLLC</h2>
+            <h2 className="text-2xl font-bold mb-4">Main Office</h2>
             <p className="text-lg mb-2">8 High Tor Rd,</p>
             <p className="text-lg mb-2">New City, NY 10956</p>
             <p className="text-lg mb-2">Phone: +1 (845) 459-9467</p>

@@ -12,12 +12,18 @@ const Projects = () => {
 
   useEffect(() => {
     const loadImages = async () => {
+      // Sort the keys descending so images display in reverse order consistently
+      const sortedKeys = Object.keys(images).sort((a, b) =>
+        b.localeCompare(a, undefined, { numeric: true, sensitivity: 'base' })
+      );
+
       const paths = await Promise.all(
-        Object.keys(images).map(async (path) => {
-          const module = await images[path]() as { default: string };
+        sortedKeys.map(async (path) => {
+          const module = (await images[path]()) as { default: string };
           return module.default;
         })
       );
+
       setImagePaths(paths);
     };
 
@@ -51,7 +57,7 @@ const Projects = () => {
         <Lightbox
           open={modalIsOpen}
           close={closeModal}
-          slides={imagePaths.map(src => ({ src }))}
+          slides={imagePaths.map((src) => ({ src }))}
           index={currentImageIndex} // Pass the current image index to Lightbox
         />
       )}
