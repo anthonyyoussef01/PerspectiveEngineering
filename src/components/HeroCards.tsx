@@ -15,7 +15,7 @@ export const HeroCards = () => {
 
       {/* Team */}
       <Card
-          className="absolute right-[71px] top-4 w-60 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+          className="absolute right-[71px] top-[55px] w-60 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
             src="/peter.jpg"
@@ -91,7 +91,7 @@ export const HeroCards = () => {
 
 
       {/* About */}
-      <Card className="absolute top-[-62px] left-[0px] w-96  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[55px] left-[0px] w-96  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardContent className="mt-6">
           <p className="text-sm pb-1">
             We are a full service consulting firm with a team of highly trained, experienced, and professional
