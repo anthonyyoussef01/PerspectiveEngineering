@@ -6,26 +6,30 @@ export const Statistics = () => {
 
   const stats: statsProps[] = [
     {
-      quantity: "50+",
+      quantity: "120+",
       description: "Projects",
     },
     {
-      quantity: "45K+",
+      quantity: "65+",
       description: "MEP Designs",
     },
     {
-      quantity: "10+",
+      quantity: "35+",
+      description: "Structural Designs",
+    },
+    {
+      quantity: "75+",
       description: "Inspections",
     },
     {
-      quantity: "4",
-      description: "on-going RFI and Submittals",
+      quantity: "9",
+      description: "On-going RFI and Submittals",
     },
   ];
 
   return (
     <section id="statistics">
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
         {stats.map(({ quantity, description }: statsProps) => (
           <div
             key={description}

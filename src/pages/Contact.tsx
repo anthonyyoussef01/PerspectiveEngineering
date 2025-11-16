@@ -102,6 +102,27 @@ const Contact = () => {
             <img
                 className="object-cover w-full h-full rounded-lg"
                 src="/map.png"
+                alt="Main Office Location Map"
+            />
+          </a>
+        </div>
+
+        <div className="bg-muted border rounded-lg p-8 flex flex-col md:flex-row gap-4 lg:gap-16 mt-8">
+          <div className="min-w-52">
+            <h2 className="text-2xl font-bold mb-4">Branch Office</h2>
+            <p className="text-lg mb-2">3403 Roses Run,</p>
+            <p className="text-lg mb-2">Aiken, SC 29803</p>
+          </div>
+          <a
+              href="https://maps.google.com/?q=3403+Roses+Run,+Aiken,+SC+29803"
+              className="object-cover rounded-lg md:max-w-72"
+              target="_blank"
+              rel="noreferrer noopener"
+          >
+            <img
+                className="object-cover w-full h-full rounded-lg"
+                src="/map-2.png"
+                alt="Branch Office Location Map"
             />
           </a>
         </div>

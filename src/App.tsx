@@ -8,6 +8,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Reviews } from "./components/Reviews.tsx";
 import { Team } from "@/components/Team.tsx";
+import { Tools } from "@/components/Tools.tsx";
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import "./App.css";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={
           <>
             <Hero />
+            <Tools />
             <About />
             <HowItWorks />
             <Services />

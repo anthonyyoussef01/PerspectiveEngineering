@@ -4,7 +4,7 @@ import {
   MechanicalIcon,
   PlumbingIcon,
   EnergyIcon,
-  FireIcon, InspectionIcon, ConstructionIcon
+  FireIcon, InspectionIcon, ConstructionIcon, StructuralIcon
 } from "./Icons";
 
 interface ServiceProps {
@@ -39,7 +39,7 @@ const serviceList: ServiceProps[] = [
     icon: <EnergyIcon />,
   },
   {
-    title: "Fire Protection/Sprinkler Design",
+    title: "Fire Protection / Sprinkler Design",
     description:
         "PEC has the capacity to produce full shop drawings including pipe sizing, calculations, flow testing and head layout. Varying levels of design can be incorporated.  Our experience with NFPA-13 and 13R as well as municipality requirements.  Testing and inspections of FP systems and certification of backflow devices is all part of our complete program.  We employ the latest computerized techniques in fire protection engineering.",
     icon: <FireIcon />,
@@ -55,6 +55,12 @@ const serviceList: ServiceProps[] = [
     description:
         "Experience with so many aspects of construction techniques gives us the expertise to deal with the problems that take place during the building process.  Whether it be incorrect design, poor workmanship, faulty materials, or poor preparation, PEC brings a customized approach to each client’s needs.  Investigation from preliminary, design and building parameters, quality assurance to inspecting and verifying contract conformance.  Cases included in our resume include faulty equipment and materials, improper preparation, code violations are all cases that we have concluded.",
     icon: <ConstructionIcon />,
+  },
+  {
+    title: "Structural",
+    description:
+        "Our structural engineering team provides comprehensive design solutions for concrete, steel, masonry, and wood-framed structures in full compliance with current IBC and IRC building code standards. Using advanced analysis and modeling software such as RISA and STAAD, we ensure each structure is designed for both safety and cost efficiency. Our engineers have extensive experience in mid-rise design for residential and commercial projects, including steel and concrete systems as well as engineered wood platforms commonly used in multi-family developments. We focus on delivering reliable, practical, and code-compliant designs that align with project goals and architectural intent.",
+    icon: <StructuralIcon />,
   },
 ];
 
