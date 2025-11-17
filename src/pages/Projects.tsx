@@ -12,13 +12,39 @@ const Projects = () => {
 
   useEffect(() => {
     const loadImages = async () => {
-      // Sort the keys descending so images display in reverse order consistently
-      const sortedKeys = Object.keys(images).sort((a, b) =>
-        b.localeCompare(a, undefined, { numeric: true, sensitivity: 'base' })
+      // Define priority images in desired order
+      const priorityImages = [
+        'one-key-1.jpg',
+        'one-key-2.jpg',
+        'one-key-3.jpg',
+        'st-george-1.jpg',
+        'st-george-2.jpg',
+        'st-george-3.jpg',
+      ];
+
+      const allKeys = Object.keys(images).sort((a, b) =>
+        a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
       );
 
+      // Separate priority images (in priority order) and other images (in normal order)
+      const prioritySortedKeys = allKeys.filter(key => {
+        const fileName = key.split('/').pop() || '';
+        return priorityImages.includes(fileName);
+      }).sort((a, b) => {
+        const fileA = a.split('/').pop() || '';
+        const fileB = b.split('/').pop() || '';
+        return priorityImages.indexOf(fileA) - priorityImages.indexOf(fileB);
+      });
+
+      const otherSortedKeys = allKeys.filter(key => {
+        const fileName = key.split('/').pop() || '';
+        return !priorityImages.includes(fileName);
+      });
+
+      const finalKeys = [...prioritySortedKeys, ...otherSortedKeys];
+
       const paths = await Promise.all(
-        sortedKeys.map(async (path) => {
+        finalKeys.map(async (path) => {
           const module = (await images[path]()) as { default: string };
           return module.default;
         })
