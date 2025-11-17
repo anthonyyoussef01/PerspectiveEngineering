@@ -27,6 +27,12 @@ const serviceList: ServiceProps[] = [
     icon: <ElectricalIcon />,
   },
   {
+    title: "Structural",
+    description:
+        "Our structural engineering team provides comprehensive design solutions for concrete, steel, masonry, and wood-framed structures in full compliance with current IBC and IRC building code standards. Using advanced analysis and modeling software such as RISA and STAAD, we ensure each structure is designed for both safety and cost efficiency. Our engineers have extensive experience in mid-rise design for residential and commercial projects, including steel and concrete systems as well as engineered wood platforms commonly used in multi-family developments. We focus on delivering reliable, practical, and code-compliant designs that align with project goals and architectural intent.",
+    icon: <StructuralIcon />,
+  },
+  {
     title: "Plumbing",
     description:
         "When it comes to plumbing systems design, cost effectiveness is at the top of our list.  PEC takes the time to analyze all domestic water, sanitary waste/vents, storm water and natural gas piping solutions in order to minimize piping and materials.  In addition, high efficiency gas water heaters are always viewed as the first option for domestic water heating applications.  PEC has years of proven experience with residential, commercial and multi-family plumbing system engineering and design.",
@@ -55,12 +61,6 @@ const serviceList: ServiceProps[] = [
     description:
         "Experience with so many aspects of construction techniques gives us the expertise to deal with the problems that take place during the building process.  Whether it be incorrect design, poor workmanship, faulty materials, or poor preparation, PEC brings a customized approach to each client’s needs.  Investigation from preliminary, design and building parameters, quality assurance to inspecting and verifying contract conformance.  Cases included in our resume include faulty equipment and materials, improper preparation, code violations are all cases that we have concluded.",
     icon: <ConstructionIcon />,
-  },
-  {
-    title: "Structural",
-    description:
-        "Our structural engineering team provides comprehensive design solutions for concrete, steel, masonry, and wood-framed structures in full compliance with current IBC and IRC building code standards. Using advanced analysis and modeling software such as RISA and STAAD, we ensure each structure is designed for both safety and cost efficiency. Our engineers have extensive experience in mid-rise design for residential and commercial projects, including steel and concrete systems as well as engineered wood platforms commonly used in multi-family developments. We focus on delivering reliable, practical, and code-compliant designs that align with project goals and architectural intent.",
-    icon: <StructuralIcon />,
   },
 ];
 
