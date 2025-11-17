@@ -44,6 +44,16 @@ export const Tools = () => {
             .animate-scroll:hover {
               animation-play-state: paused;
             }
+            @media (max-width: 767px) {
+              .animate-scroll {
+                animation: scroll 15s linear infinite;
+              }
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+              .animate-scroll {
+                animation: scroll 20s linear infinite;
+              }
+            }
           `}} />
 
           <div className="flex items-center gap-6 md:gap-8 animate-scroll">
