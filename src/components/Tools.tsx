@@ -27,8 +27,36 @@ export const Tools = () => {
         We stay current with the latest tools and technology, equipped with trade-specific software solutions
       </p>
 
-      <div className="bg-muted/50 border rounded-lg py-8 px-4 md:px-8 overflow-hidden">
-        <div className="relative">
+      <div className="bg-muted/50 border rounded-lg py-4 px-4 md:px-8">
+        {/* Mobile scrollable view (hidden on md and above) */}
+        <div className="md:hidden">
+          <div className="relative">
+            {/* Scroll hint text */}
+            <p className="text-xs text-muted-foreground mb-4 flex items-center justify-center gap-2">
+              <span>← Swipe to explore →</span>
+            </p>
+
+            {/* Horizontal scrollable container */}
+            <div className="overflow-x-auto pb-4 scroll-smooth">
+              <div className="flex items-center gap-4 px-2">
+                {tools.map((tool, index) => (
+                  <div key={index} className="group transition-transform hover:scale-110 duration-300 flex-shrink-0">
+                    <img
+                      title={tool.title}
+                      alt={tool.alt}
+                      loading="lazy"
+                      src={tool.src}
+                      className="aspect-square object-contain h-14 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop auto-scroll view (visible on md and above) */}
+        <div className="hidden md:block relative overflow-hidden">
           <style dangerouslySetInnerHTML={{ __html: `
             @keyframes scroll {
               0% {
@@ -46,7 +74,7 @@ export const Tools = () => {
             }
           `}} />
 
-          <div className="flex items-center gap-6 md:gap-8 animate-scroll">
+          <div className="flex items-center gap-8 animate-scroll">
             {/* First set of tools */}
             {tools.map((tool, index) => (
               <div key={index} className="group transition-transform hover:scale-110 duration-300 flex-shrink-0">
@@ -55,7 +83,7 @@ export const Tools = () => {
                   alt={tool.alt}
                   loading="lazy"
                   src={tool.src}
-                  className="aspect-square object-contain h-14 md:h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  className="aspect-square object-contain h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
                 />
               </div>
             ))}
@@ -67,7 +95,7 @@ export const Tools = () => {
                   alt={tool.alt}
                   loading="lazy"
                   src={tool.src}
-                  className="aspect-square object-contain h-14 md:h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  className="aspect-square object-contain h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
                 />
               </div>
             ))}
