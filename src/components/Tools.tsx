@@ -1,18 +1,19 @@
 export const Tools = () => {
   const tools = [
-    { title: "Autodesk Built", alt: "BLD", src: "/bld.jpg" },
-    { title: "Revit", alt: "RVT", src: "/rvt.jpg" },
-    { title: "AutoCAD", alt: "AutoCAD", src: "/cad.jpg" },
-    { title: "Autodesk Insight 360", alt: "I360", src: "/i360.jpg" },
-    { title: "Duct Sizer", alt: "Duct Sizer", src: "/blowdryer.jpg" },
-    { title: "HAP v6", alt: "HAP v6", src: "/hap-v6.jpg" },
-    { title: "K-Select", alt: "K-Select", src: "/k-select.jpg" },
-    { title: "LATS HVAC", alt: "LATS-HVAC", src: "/lats-hvac.jpg" },
-    { title: "McQuay", alt: "McQuay", src: "/mcquay.jpg" },
-    { title: "Titus Teams Selection", alt: "Titus Teams Selection", src: "/titus.jpg" },
-    { title: "Diamond Builder", alt: "DiamondBuilder", src: "/diamond-builder.jpg" },
-    { title: "Trane", alt: "Trane", src: "/trane.webp" },
-    { title: "Enercalc", alt: "Enercalc", src: "/enercalc.jpg" },
+    { title: "Autodesk Built", alt: "BLD", src: "/bld.jpg", url: "https://construction.autodesk.com/trial/autodesk-build" },
+    { title: "Revit", alt: "RVT", src: "/rvt.jpg", url: "https://www.autodesk.com/products/revit" },
+    { title: "AutoCAD", alt: "AutoCAD", src: "/cad.jpg", url: "https://www.autodesk.com/products/autocad" },
+    { title: "Autodesk Insight 360", alt: "I360", src: "/i360.jpg", url: "https://www.autodesk.com/products/insight-360" },
+    // These entries don't have working links so set url to null
+    { title: "Duct Sizer", alt: "Duct Sizer", src: "/blowdryer.jpg", url: null },
+    { title: "HAP v6", alt: "HAP v6", src: "/hap-v6.jpg", url: null },
+    { title: "K-Select", alt: "K-Select", src: "/k-select.jpg", url: null },
+    { title: "LATS HVAC", alt: "LATS-HVAC", src: "/lats-hvac.jpg", url: null },
+    { title: "McQuay", alt: "McQuay", src: "/mcquay.jpg", url: null },
+    { title: "Titus Teams Selection", alt: "Titus Teams Selection", src: "/titus.jpg", url: "https://www.titus-hvac.com/" },
+    { title: "Diamond Builder", alt: "DiamondBuilder", src: "/diamond-builder.jpg", url: null },
+    { title: "Trane", alt: "Trane", src: "/trane.webp", url: "https://www.trane.com/" },
+    { title: "Enercalc", alt: "Enercalc", src: "/enercalc.jpg", url: "https://www.enercalc.com/" },
   ];
 
   return (
@@ -40,15 +41,41 @@ export const Tools = () => {
             <div className="overflow-x-auto pb-4 scroll-smooth">
               <div className="flex items-center gap-4 px-2">
                 {tools.map((tool, index) => (
-                  <div key={index} className="group transition-transform hover:scale-110 duration-300 flex-shrink-0">
-                    <img
-                      title={tool.title}
-                      alt={tool.alt}
-                      loading="lazy"
-                      src={tool.src}
-                      className="aspect-square object-contain h-14 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-                    />
-                  </div>
+                  tool.url ? (
+                    <a
+                      key={index}
+                      href={tool.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group transition-transform hover:scale-110 duration-300 flex-shrink-0 cursor-pointer"
+                      title={`Visit ${tool.title}`}
+                    >
+                      <img
+                        title={tool.title}
+                        alt={tool.alt}
+                        loading="lazy"
+                        src={tool.src}
+                        className="aspect-square object-contain h-14 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                      />
+                    </a>
+                  ) : (
+                    // Non-clickable but visually same as others; no hover scale and cursor is default
+                    <div
+                      key={index}
+                      className="group transition-transform duration-300 flex-shrink-0 cursor-default"
+                      title={`${tool.title} — link unavailable`}
+                      role="img"
+                      aria-label={`${tool.title} (link unavailable)`}
+                    >
+                      <img
+                        title={tool.title}
+                        alt={tool.alt}
+                        loading="lazy"
+                        src={tool.src}
+                        className="aspect-square object-contain h-14 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                      />
+                    </div>
+                  )
                 ))}
               </div>
             </div>
@@ -77,27 +104,78 @@ export const Tools = () => {
           <div className="flex items-center gap-8 animate-scroll">
             {/* First set of tools */}
             {tools.map((tool, index) => (
-              <div key={index} className="group transition-transform hover:scale-110 duration-300 flex-shrink-0">
-                <img
-                  title={tool.title}
-                  alt={tool.alt}
-                  loading="lazy"
-                  src={tool.src}
-                  className="aspect-square object-contain h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-                />
-              </div>
+              tool.url ? (
+                <a
+                  key={index}
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group transition-transform hover:scale-110 duration-300 flex-shrink-0 cursor-pointer"
+                  title={`Visit ${tool.title}`}
+                >
+                  <img
+                    title={tool.title}
+                    alt={tool.alt}
+                    loading="lazy"
+                    src={tool.src}
+                    className="aspect-square object-contain h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  />
+                </a>
+              ) : (
+                // Non-clickable duplicate for desktop; visually same but no hover scale and cursor default
+                <div
+                  key={index}
+                  className="group transition-transform duration-300 flex-shrink-0 cursor-default"
+                  title={`${tool.title} — link unavailable`}
+                  role="img"
+                  aria-label={`${tool.title} (link unavailable)`}
+                >
+                  <img
+                    title={tool.title}
+                    alt={tool.alt}
+                    loading="lazy"
+                    src={tool.src}
+                    className="aspect-square object-contain h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+              )
             ))}
             {/* Duplicate set for seamless loop */}
             {tools.map((tool, index) => (
-              <div key={`duplicate-${index}`} className="group transition-transform hover:scale-110 duration-300 flex-shrink-0">
-                <img
-                  title={tool.title}
-                  alt={tool.alt}
-                  loading="lazy"
-                  src={tool.src}
-                  className="aspect-square object-contain h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-                />
-              </div>
+              tool.url ? (
+                <a
+                  key={`duplicate-${index}`}
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group transition-transform hover:scale-110 duration-300 flex-shrink-0 cursor-pointer"
+                  title={`Visit ${tool.title}`}
+                >
+                  <img
+                    title={tool.title}
+                    alt={tool.alt}
+                    loading="lazy"
+                    src={tool.src}
+                    className="aspect-square object-contain h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  />
+                </a>
+              ) : (
+                <div
+                  key={`duplicate-${index}`}
+                  className="group transition-transform duration-300 flex-shrink-0 cursor-default"
+                  title={`${tool.title} — link unavailable`}
+                  role="img"
+                  aria-label={`${tool.title} (link unavailable)`}
+                >
+                  <img
+                    title={tool.title}
+                    alt={tool.alt}
+                    loading="lazy"
+                    src={tool.src}
+                    className="aspect-square object-contain h-20 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+              )
             ))}
           </div>
         </div>
@@ -105,4 +183,3 @@ export const Tools = () => {
     </section>
   );
 };
-
