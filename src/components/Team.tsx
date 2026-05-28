@@ -251,9 +251,10 @@ export const Team = () => {
           <li>Small convenience store and food chain to high end restaurant and kitchens</li>
         </ul>
         <p className="text-sm">
-          Licensed in many states, we provide our services in: {" "}
+          Licensed in many states, we provide our services in:{" "}
           <span className="text-gray-700">
-            NY (PE# 10693), NJ (PE# 24GE06036000), CT (PE# 31301), SC (PE# 42922), TX (PE# 124382), FL (PE# 101427)
+            NY (PE# 10693), NJ (PE# 24GE06036000), CT (PE# 31301), SC (PE# 42922), NC (PE# 063011), GA (PE# 056383),
+            TX (PE# 124382), FL (PE# 101427)
           </span>
         </p>
       </div>
