@@ -93,8 +93,20 @@ export const Tools = () => {
                 transform: translateX(-50%);
               }
             }
-            .animate-scroll {
-              animation: scroll 30s linear infinite;
+            @media (max-width: 767px) {
+              .animate-scroll {
+                animation: scroll 15s linear infinite !important;
+              }
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+              .animate-scroll {
+                animation: scroll 20s linear infinite !important;
+              }
+            }
+            @media (min-width: 1025px) {
+              .animate-scroll {
+                animation: scroll 30s linear infinite;
+              }
             }
             .animate-scroll:hover {
               animation-play-state: paused;
